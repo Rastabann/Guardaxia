@@ -1,0 +1,282 @@
+/***************** RESET *****************/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  
+ p {
+    margin-bottom: 0.8rem;
+  }
+  
+h1,
+h2,
+h3,
+h4 {
+    margin-bottom: 1rem;
+  }
+  
+a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+body {
+    font-family: 'Open Sans', sans-serif;
+  }
+
+/**************** HEADER *****************/
+
+.vp-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+header {
+    padding: 1rem 2rem;
+    background: #000000;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+  }
+
+header img  {
+    width: 233px;
+    height: 78px;
+    position: relative;
+    top: 5px;
+  }
+
+header ul {
+    display: flex;
+    flex-flow: row nowrap;
+    list-style: none;
+  }
+  
+header ul li {
+    padding: 2rem;
+    color: white;
+  }
+  
+header ul li a:hover {
+    color: #71edff;
+  }
+
+/**************** VP *****************/
+
+.vp {
+    flex: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url(../Images/robin-pierre-CkkCk4pXHTI-unsplash\ -\ Modifié\ \(2\).png) center center/cover;
+    min-height: 819px;
+  }
+  
+strong {
+    color: #71edff;
+    font-weight: 400;
+  }
+
+.vp-content {
+    max-width: 800px;
+    text-align: center;
+    color: white;
+    font-size: larger;
+  }
+
+/**************** VP2 *****************/
+
+/* .contact {
+  padding: 10rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #444444;
+  }
+
+.contact-form {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  }
+
+.contact-form input {
+  background: #333;
+  border: 0;
+  border-bottom: 1px solid #555;
+  padding: 1rem;
+  font-size: 1.3rem;
+  color: white;
+  outline: 0;
+  margin-bottom: 1rem;
+  }
+
+.contact-form button {
+    display: block;
+    margin: 3rem auto;
+    padding: 1rem 2rem;
+    border: 0;
+    border-radius: 30px;
+    background: #0f05a0;
+    color: white;
+    font-weight: 700;
+    font-size: 1.3rem;
+    cursor: pointer;
+  }
+  
+  .contact-form button:hover {
+    background: white;
+    color: black;
+  } */
+
+.formulaire {
+  padding: 5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #444444;
+  min-height: 50vh;
+  width: 100%;
+}
+
+.form-box {
+  position: relative;
+  width: 400px;
+  height: 450px;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  backdrop-filter: blur(15px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 50px 0 50px;
+}
+
+form h2 {
+  font-size: 2em;
+  color: #ffffff;
+  text-align: center;
+}
+
+.inputbox {
+  position: relative;
+  margin: 30px 0;
+  width: 310px;
+  border-bottom: 2px solid #ffffff;
+}
+
+.inputbox label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  color: #ffffff;
+  font-size: 1em;
+  pointer-events: none;
+  transition: .5s;
+}
+
+input:focus ~ label,
+input:focus ~ :valid {
+  top: -5px;
+}
+
+.inputbox input {
+  width: 100%;
+  height: 50px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  padding: 0 35px 0 5px;
+  color: #ffffff;
+}
+
+.decla {
+  margin: -15px 0 15px;
+  font-size: .9em;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+}
+
+.decla label input {
+  margin-right: 3px;
+}
+
+button {
+  width: 100%;
+  height: 40px;
+  border-radius: 40px;
+  background: #ffffff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: 600;
+}
+
+button:hover {
+  color: white;
+  background: #71edff;
+}
+/**************** VP3 *****************/
+
+.bg-dark {
+    background: white;
+    color: black;
+  }
+
+.who {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+
+.who-content-img {
+    flex: 1;
+  }
+
+.who-content-img img {
+    height: 100%;
+  }
+
+.who-content-img img {
+    width: 100%;
+  }
+
+.who-content-text {
+    flex: 1;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+.who-content-text h2 {
+    margin-bottom: 2rem;
+  }
+  
+.who-content-text p {
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+  }
+
+/**************** FOOTER *****************/
+
+footer {
+    background: black;
+    padding: 5rem 1rem;
+    color: white;
+    text-align: center;
+  }
+  
+footer p {
+    margin-bottom: 0;
+  }
