@@ -1,145 +1,180 @@
 /***************** RESET *****************/
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
-  
-  
- p {
-    margin-bottom: 0.8rem;
-  }
-  
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+p {
+  margin-bottom: 0.8rem;
+}
+
 h1,
 h2,
 h3,
 h4 {
-    margin-bottom: 1rem;
-  }
-  
+  margin-bottom: 1rem;
+}
+
 a {
-    color: #ffffff;
-    text-decoration: none;
-  }
+  color: #ffffff;
+  text-decoration: none;
+}
 
 body {
-    font-family: 'Open Sans', sans-serif;
-  }
+  font-family: "Open Sans", sans-serif;
+}
 
 /**************** HEADER *****************/
 
 .vp-container {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-  }
-  
-header {
-    padding: 1rem 2rem;
-    background: #000000;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-  }
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
 
-header img  {
-    width: 233px;
-    height: 78px;
-    position: relative;
-    top: 5px;
-  }
+header {
+  padding: 1rem 2rem;
+  background: #000000;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+header img {
+  width: 233px;
+  height: 78px;
+  position: relative;
+  top: 5px;
+}
 
 header ul {
-    display: flex;
-    flex-flow: row nowrap;
-    list-style: none;
-  }
-  
+  display: flex;
+  flex-flow: row nowrap;
+  list-style: none;
+}
+
 header ul li {
-    padding: 2rem;
-    color: white;
-  }
-  
+  padding: 2rem;
+  color: white;
+}
+
 header ul li a:hover {
-    color: #71edff;
-  }
+  color: #71edff;
+}
 
 /**************** VP *****************/
 
 .vp {
-    flex: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: url(../Images/robin-pierre-CkkCk4pXHTI-unsplash\ -\ Modifié\ \(2\).png) center center/cover;
-    min-height: 819px;
-  }
-  
+  flex: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url(../Images/robin-pierre-CkkCk4pXHTI-unsplash\-\Modifié\\(2\).png)
+    center center/cover;
+  min-height: 819px;
+}
+
 strong {
-    color: #71edff;
-    font-weight: 400;
-  }
+  color: #71edff;
+  font-weight: 400;
+}
 
 .vp-content {
-    max-width: 800px;
-    text-align: center;
-    color: white;
-    font-size: larger;
-  }
+  max-width: 800px;
+  text-align: center;
+  color: white;
+  font-size: larger;
+}
 
 /**************** VP2 *****************/
 
-/* .contact {
-  padding: 10rem 1rem;
+.listing {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  background-color: #444444;
-  }
+  padding: 40px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+}
 
-.contact-form {
-  max-width: 600px;
-  display: flex;
-  flex-direction: column;
+.listing h2 {
+  color: #ffffff;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  display: inline-block;
+  font-weight: 500;
+  border-bottom: 2px solid #71edff;
+}
+
+.listing ul {
+  position: relative;
+}
+
+.listing ul li {
+  position: relative;
+  list-style: none;
+  display: table;
+  margin: 10px 0;
+  padding-left: 36px;
+  padding-right: 5px;
+}
+
+.listing ul li::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 34px;
+  height: 34px;
+  background: transparent;
+  border-radius: 34px;
+  transition: background 0.5s, width 0.5s;
+  transition-delay: 0.5s, 0s;
+  border: 2px solid #71edff;
+}
+
+.listing ul li:hover::before {
   width: 100%;
-  }
+  background: #71edff;
+  transition-delay: 0s, 0.5s;
+}
 
-.contact-form input {
-  background: #333;
-  border: 0;
-  border-bottom: 1px solid #555;
-  padding: 1rem;
-  font-size: 1.3rem;
-  color: white;
-  outline: 0;
-  margin-bottom: 1rem;
-  }
+.listing ul li::after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 14px;
+  width: 6px;
+  height: 6px;
+  border-top: 2px solid #ffffff;
+  border-right: 2px solid #ffffff;
+  transform: rotate(45deg);
+  transition: 0.5s;
+  transition-delay: 0s;
+}
 
-.contact-form button {
-    display: block;
-    margin: 3rem auto;
-    padding: 1rem 2rem;
-    border: 0;
-    border-radius: 30px;
-    background: #0f05a0;
-    color: white;
-    font-weight: 700;
-    font-size: 1.3rem;
-    cursor: pointer;
-  }
-  
-  .contact-form button:hover {
-    background: white;
-    color: black;
-  } */
+.listing ul li:hover::after {
+  left: 24px;
+  transition-delay: 0.5s;
+  transform: rotate(45deg) scale(1.5);
+}
 
+.listing ul li p {
+  position: relative;
+  z-index: 10;
+  padding: 8px 10px;
+  color: #ffffff;
+}
 .formulaire {
   padding: 5rem 1rem;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
+  justify-content: space-around;
   background-color: #444444;
   min-height: 50vh;
   width: 100%;
@@ -180,7 +215,7 @@ form h2 {
   color: #ffffff;
   font-size: 1em;
   pointer-events: none;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 input:focus ~ label,
@@ -201,7 +236,7 @@ input:focus ~ :valid {
 
 .decla {
   margin: -15px 0 15px;
-  font-size: .9em;
+  font-size: 0.9em;
   color: #ffffff;
   display: flex;
   justify-content: center;
@@ -230,53 +265,53 @@ button:hover {
 /**************** VP3 *****************/
 
 .bg-dark {
-    background: white;
-    color: black;
-  }
+  background: white;
+  color: black;
+}
 
 .who {
-    display: flex;
-    flex-flow: row nowrap;
-  }
+  display: flex;
+  flex-flow: row nowrap;
+}
 
 .who-content-img {
-    flex: 1;
-  }
+  flex: 1;
+}
 
 .who-content-img img {
-    height: 100%;
-  }
+  height: 100%;
+}
 
 .who-content-img img {
-    width: 100%;
-  }
+  width: 100%;
+}
 
 .who-content-text {
-    flex: 1;
-    padding: 4rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  
+  flex: 1;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .who-content-text h2 {
-    margin-bottom: 2rem;
-  }
-  
+  margin-bottom: 2rem;
+}
+
 .who-content-text p {
-    font-size: 1.3rem;
-    line-height: 1.8rem;
-  }
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+}
 
 /**************** FOOTER *****************/
 
 footer {
-    background: black;
-    padding: 5rem 1rem;
-    color: white;
-    text-align: center;
-  }
-  
+  background: black;
+  padding: 5rem 1rem;
+  color: white;
+  text-align: center;
+}
+
 footer p {
-    margin-bottom: 0;
-  }
+  margin-bottom: 0;
+}
